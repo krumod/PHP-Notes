@@ -1,0 +1,54 @@
+1) Different betweeb project and product.
+In this case , minor different in both. 
+project contains specific requirement of specific customer.
+product contains specific requirement of customer groups like CRM.
+
+2) Types of error:
+Error : Any kind of human behaviour create problem in application.
+
+Defect / Bug : If expected behaviour not match with actual behaviour of application. In simple word, actual event not match with customer requirement.
+
+Failure : It is not a error. It may be possible from different reason like server not responsing. In this problem in server configration, server resoures except programming.
+
+3) Steps of SDFC Life cycle
+->Requirement : Make notes of customer requirement.
+->Design : It contain lot of things like database structure, Application front end and backend, Server side validation , client side validation. Here make all the notes of unit testing.
+->Development : It is strongly recommended, If design related points will be completed then start development related task.
+->Testing : If is important part of SDDC life cycle. Here, tester check application for specific requirement. If we follow above steps properly, Possiblity to increase productivity.
+
+4) Verification and validation model
+In development views. 
+In Verification model , Make list of all the input with expected output and check all of this output is correct or not.
+In validation model , This output contains expected validation or not.
+
+5) Steps of STLC Life cycle
+-> Requirement analysis
+-> Test planning
+-> Test case development
+-> Test execution
+-> Test cycle close? : Here , make sure that your application does not contain any error and bug.
+
+-------------------------------------------------
+Level of testing
+-------------------------------------------------
+
+6) Unit testing
+In this teting , analyse all the input and output is expected  or not. here check all the flow will be executed or not.
+Control structure contain all the condition is applied or not and check with expected output.
+Loop structure contain all the loop for applied for get and set result and check with expected output.
+Mutation testing verify all the result is expected or not at end of logic closing.
+
+7) Integration testing
+In this testing , checking data communication between related modules.
+Top down , Bottom up approach useful for this.
+->White box testing
+It contains to check internal logic in correct or not. Here we check entire internal with input and expected output.
+
+->Black box testing
+It contains functionality working on customer requirements.
+
+->Grey box testing
+If combine of White box and Black box testing.
+
+8) System testing
+It contains testing overall functionality as per customer requirement.
