@@ -1,0 +1,32 @@
+add_filter( 'posts_clauses', 'filter_clauses', 10, 2 );
+
+/**
+ * Filtering everything.
+ *
+ * @param array $clauses Array with all parts of the query.
+ * @param WP_Query $wp_query Object.
+ * @return string
+ */
+function filter_clauses( $clauses, $wp_query ) {
+	if($_POST['action'] == "test_action"){
+		$clauses['where'] = " AND wp_posts.post_title LIKE '%ecom%' or wp_posts.post_title LIKE '%marketing%'";
+	}
+ return $clauses;
+}
+
+add_filter( 'posts_distinct', 'some_function_distinct', 10, 2 );
+
+/**
+ * We will return the 'DISTINCT'.
+ *
+ * @param string $distinct String containing DISTINCT or empty.
+ * @param WP_Query $wp_query Object.
+ * @return string
+ */
+function some_function_distinct( $distinct, $wp_query ) {
+	if($_POST['action'] == "test_action"){
+		return 'DISTINCT';
+	}else{
+		return $distinct;
+	}
+}
